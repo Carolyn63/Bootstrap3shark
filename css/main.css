@@ -442,7 +442,7 @@ li.sign-up:hover {
 
 
 .home-box:hover {
-  background: url("../img/arrow.png") no-repeat scroll center bottom #F7AD6C;
+  background: url("../img/arrow.png") no-repeat scroll center bottom #FCD3AF;
   transition: all 0.35s ease-in-out;
 	-moz-transition: all 0.35s ease-in-out;
 	-webkit-transition: all 0.35s ease-in-out;
