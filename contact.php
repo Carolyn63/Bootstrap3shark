@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>Sharkfin | Designed By Theme Armada</title>
+ <title>IntrApps</title>
   <meta name="keywords" content="flat bootstrap, bootstrap themes, creative responsive websites, illustration bootstrap design, blue responsive themes, mobile menu website">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   
-  <meta property="og:title" content="Sharkfin | Designed By Theme Armada">
+  <meta property="og:title" content="IntrApps">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.themearmada.com/demos/sharkfin">
-	<meta property="og:site_name" content="Theme Armada">
+	<meta property="og:url" content="http://www.intrapps.net">
+	<meta property="og:site_name" content="IntrApps">
 	<meta property="og:description" content="flat bootstrap, bootstrap themes, creative responsive websites, illustration bootstrap design, blue responsive themes, mobile menu website">
 
   <!-- Styles -->
@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 <body>
@@ -42,11 +42,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        <a class="navbar-brand" href="index2.html"><img src="img/anotherlogo2.png" alt="Logo"></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
+          <li><a href="index2.html">Home</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -58,6 +58,7 @@
               <li><a href="signup.html">Sign Up</a></li>
             </ul>
           </li>
+		  <li><a href="login.html">Log In</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="blog.html">News</a></li>
           <li class="active"><a href="contact.php">Contact</a></li>
@@ -69,6 +70,7 @@
   
   
   <!--Page Title-->
+  </section>
   <section id="page-title">
     <div class="container">
       <div class="row">
@@ -87,15 +89,7 @@
       <div class="row">
         <div class="col-md-8">
           
-          <?php  
-
-            // check for a successful form post  
-            if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
-      
-            // check for a form error  
-            elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
-      
-            ?>  
+          
           
           <form method="POST" action="contact-form-submission.php">
             <input type="text" class="col-xs-12" name="contact_name" placeholder="Name">
@@ -108,8 +102,8 @@
         </div><!--End Span8-->
         
         <div class="col-md-4">
-          <p class="lead">Side Bar Title<p>
-    				<p class="gray">Lorem <a href="#">ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="lead">Contact Us<p>
+    				<p class="gray">Got a question?  Got a suggestion?  Or just want to give us your feedback? Get in touch with us using this form and we will get back to you as soon as possible.</p>
         </div>
         
       </div><!--End Row-->   
@@ -121,7 +115,7 @@
   <!--Map Section-->
     <section id="map">
     
-      <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=atlanta&amp;aq=&amp;sll=32.678125,-83.178297&amp;sspn=8.89966,16.907959&amp;ie=UTF8&amp;hq=&amp;hnear=Atlanta,+Fulton,+Georgia&amp;t=m&amp;z=6&amp;iwloc=A&amp;output=embed"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50654.23700765609!2d-122.21974130000005!3d37.4869265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa300982aa7bf%3A0xf8b7693a49bac24f!2sBroadway+St!5e0!3m2!1sen!2suk!4v1401903237054" width="600" height="450" frameborder="0" style="border:0">"></iframe>
       
     </section>
     
@@ -131,7 +125,7 @@
       <div class="container">
         <div class="row margin-40">
           <div class="col-md-10 col-md-offset-1 text-center">
-            <p>1234 Main Street Atlanta, GA 30305 | 404.555.5555  |  <a href="mailto:support@themearmada.com"><i class="fa fa-envelope-o"></i> support@themearmada.com</a></p>
+            <p> 425 Broadway Street, Redwood City, CA 94608 <a href="info@intrapps.net"><i class="fa fa-envelope-o"></i> info@intrapps.net</a></p>
             <hr>
           </div>
         </div>
@@ -158,7 +152,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>@ Copyright. All Rights Reserved. Created by <a href="http://www.themearmada.com">Theme Armada.</a></p>
+            <p>@ Copyright. All Rights Reserved. Created by <a href="http://www.intrapps.net">IntrApps.</a></p>
           </div>
         </div>
       </div>
