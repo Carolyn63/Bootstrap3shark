@@ -29,7 +29,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon16.ico">
 </head>
 
 <body>
@@ -50,17 +50,16 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="full-width.html">Full Width</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services</a></li>
-              <li><a href="blog-article.html">Blog Article</a></li>
+			  <li><a href="news-article.html">News Articles</a></li>
               <li><a href="login.html">Log In</a></li>
               <li><a href="signup.html">Sign Up</a></li>
             </ul>
           </li>
 		  <li><a href="login.html">Log In</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="blog.html">News</a></li>
+          <li><a href="news.html">News</a></li>
           <li class="active"><a href="contact.php">Contact</a></li>
           <li class="sign-up"><a href="signup.html"><span class="white"> Sign Up</span></a></li>
         </ul>
@@ -68,7 +67,16 @@
     </div>
   </div>
   
-  
+  <?php  
+
+            // check for a successful form post  
+            if (isset($_GET['s'])) echo "<div class=\"alert alert-success\">".$_GET['s']."</div>";  
+      
+            // check for a form error  
+            elseif (isset($_GET['e'])) echo "<div class=\"alert alert-error\">".$_GET['e']."</div>";  
+      
+            ?>         
+			
   <!--Page Title-->
   </section>
   <section id="page-title">
@@ -88,7 +96,7 @@
       
       <div class="row">
         <div class="col-md-8">
-          
+		   
           
           
           <form method="POST" action="contact-form-submission.php">
@@ -98,7 +106,9 @@
             <textarea class="col-xs-12" name="contact_message" placeholder="Message"></textarea>
             <input type="hidden" name="save" value="contact">
             <p><button class="btn-main" type="submit">Send Message</button></p>
-          </form>
+          
+		  
+		  </form>
         </div><!--End Span8-->
         
         <div class="col-md-4">
@@ -109,6 +119,8 @@
       </div><!--End Row-->   
     </div>
   </section> 
+  
+  
    
 
   
